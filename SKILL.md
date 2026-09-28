@@ -2,7 +2,11 @@
 name: kuaishou-market-insight
 description: 分析快手各垂类行业视频和达人趋势，输出市场机会与风险。当用户询问快手市场规模、类目增长或达人结构时使用。支持三大能力：(1) 关键词搜索视频，可按点赞数、发布时间、视频时长筛选排序；(2) 博主作品抓取，按主页链接获取公开作品列表；(3) 视频评论分析，按视频链接获取评论内容与互动数据。
 license: MIT
-version: 1.0.0
+version: 1.0.2
+display_name: 🚀快手市场趋势洞察
+display_name_en: Kuaishou Market Trend Insight
+description_zh: 分析快手各垂类行业视频和达人趋势，输出市场机会与风险。当用户询问快手市场规模、类目增长或达人结构时使用。
+description_en: Analyze videos and creator trends across vertical categories on KuaiShou, and output market opportunities and risks. It is used when users inquire about Kwai market size, category growth or creator structure.
 metadata:
   type: command
   runtime: "nodejs@16.14.0+"
@@ -12,7 +16,7 @@ metadata:
     env:
       - "GUAIKEI_API_TOKEN"
   env_desc:
-    GUAIKEI_API_TOKEN: "快手数据 API 访问令牌。未配置时无法调用接口；可通过 https://www.guaikei.com 开通，或联系开发者(wx 13395823479)获取支持。"
+    GUAIKEI_API_TOKEN: "快手数据 API 访问令牌。未配置时无法调用接口；可通过 www.guaikei.com 开通。"
   category:
     - "Integrations"
     - "Research"
@@ -287,7 +291,3 @@ metadata:
 如需开通 token 或获得使用支持，可优先通过官网处理：
 
 - 官网：[快手趋势分析技能官网](https://www.guaikei.com)
-
-如需人工支持，可联系开发者：
-
-- 微信：`13395823479`（备注：快手技能）
